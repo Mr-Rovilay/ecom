@@ -5,6 +5,7 @@ import Cart from "./Pages/Cart"
 import Product from "./Pages/Product"
 import ShopCategory from "./Pages/ShopCategory"
 import LoginSignup from "./Pages/LoginSignup"
+import { Footer } from "./Components/Footer/Footer"
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/kids" element={<ShopCategory category="kids"/>}/>
         <Route path="/login" element={<LoginSignup/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

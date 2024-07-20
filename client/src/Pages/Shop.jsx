@@ -1,4 +1,3 @@
-import { Footer } from "../Components/Footer/Footer"
 import Hero from "../Components/Hero/Hero"
 import NewCollections from "../Components/NewCollections/NewCollections"
 import Offers from "../Components/Offers/Offers"
@@ -11,7 +10,6 @@ const Shop = () => {
       <Popular/>
       <Offers/>
       <NewCollections/>
-      <Footer/>
     </div>
   )
 }
