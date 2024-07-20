@@ -1,6 +1,10 @@
+*{
+  margin: 0;
+}
 body{
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
   font-family:"poppins";
 }
