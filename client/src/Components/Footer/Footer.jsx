@@ -1,5 +1,5 @@
 import "./Footer.css";
-import footer_logo from "/public/logo_big.png";
+import footer_logo from "/logo_big.png";
 
 export const Footer = () => {
   return (

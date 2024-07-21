@@ -5,8 +5,8 @@
     width: 100%;
     background: #fff;
     box-shadow: 0 1px 3px -2px black;
-    position: fixed; /* or use 'absolute'/'fixed' based on your layout needs */
-    z-index: 1000; /* set a high z-index value */
+    position: fixed;
+    z-index: 1000; 
 }
 
 .nav-logo {
