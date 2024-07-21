@@ -1,23 +1,45 @@
-.relatedProduct{
+.relatedProduct {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: 90vh;
+    gap: 20px; /* Increase gap for better spacing */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    height: auto; /* Adjust height for better responsiveness */
+    background-color: #f8f8f8; /* Light background for contrast */
 }
-.relatedProduct h1{
-     color: #171717;
-     font-size: 50px;
-     font-weight: 600;
+
+.relatedProduct h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Center-align text */
 }
-.relatedProduct hr{
+
+.relatedProduct hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
+    border: none; /* Remove default border */
 }
-.relatedProduct-item{
-    margin-top: 50px;
+
+/* Flexbox layout for items */
+.relatedProduct-item {
     display: flex;
-    gap: 30px;
+    gap: 30px; /* Space between items */
+    justify-content: center; /* Center-align items */
+    margin-top: 30px; /* Adjust margin for better spacing */
+   /* Allow items to wrap to new lines */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones) */
+@media (max-width: 600px) {
+    .relatedProduct-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center-align items */
+        gap: 20px; /* Adjust gap for better spacing */
+    }
 }
