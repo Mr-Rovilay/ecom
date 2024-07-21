@@ -2,8 +2,11 @@ import PropTypes from "prop-types";
 import "./productdisplay.css";
 import star_icon from "/star_icon.png";
 import star_dull_icon from "/star_dull_icon.png";
+import { useContext } from "react";
+import { ShopContext } from "../../Context/ShopContext";
 
 const ProductDisplay = ({ product }) => {
+  const {addToCart } = useContext(ShopContext);
   return (
     <div className="productDisplay">
       <div className="productDisplay-left">
@@ -51,7 +54,7 @@ const ProductDisplay = ({ product }) => {
             <div className="size-option">XXL</div>
           </div>
         </div>
-        <button className="add-to-cart-button">ADD TO CART</button>
+        <button className="add-to-cart-button" onClick={()=> addToCart(product.id)}>ADD TO CART</button>
         <p className="productDisplay-right-category">
           <span>Category:</span> Women, T-shirt, Crop Top
         </p>
@@ -65,6 +68,7 @@ const ProductDisplay = ({ product }) => {
 
 ProductDisplay.propTypes = {
   product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     old_price: PropTypes.oneOfType([PropTypes.string, PropTypes.number])

@@ -6,7 +6,7 @@ import drop_down from "/public/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 
 const ShopCategory = ({ banner, category }) => {
-  const { allProduct } = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
 
   return (
     <div className="shop-category">
@@ -20,7 +20,7 @@ const ShopCategory = ({ banner, category }) => {
         </div>
       </div>
       <div className="shopCategory-products">
-        {allProduct.map((item, index) => {
+        {all_product.map((item, index) => {
           if (category === item.category) {
             return (
               <Item

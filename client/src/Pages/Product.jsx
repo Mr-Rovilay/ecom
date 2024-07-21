@@ -8,9 +8,9 @@ import RelatedProduct from "../Components/RelatedProduct/RelatedProduct";
 
 
 const Product = () => {
-  const { allProduct } = useContext(ShopContext); 
+  const { all_product } = useContext(ShopContext); 
   const { productId } = useParams();
-  const product = allProduct.find((e) => e.id === Number(productId));
+  const product = all_product.find((e) => e.id === Number(productId));
 
   if (!product) {
     return <div>Product not found</div>;
