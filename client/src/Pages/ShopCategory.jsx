@@ -2,7 +2,7 @@ import  { useContext } from "react";
 import PropTypes from "prop-types";
 import "./Css/category.css";
 import { ShopContext } from "../Context/ShopContext";
-import drop_down from "/public/dropdown_icon.png";
+import drop_down from "/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 
 const ShopCategory = ({ banner, category }) => {

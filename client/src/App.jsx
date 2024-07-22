@@ -6,9 +6,9 @@ import Product from "./Pages/Product"
 import ShopCategory from "./Pages/ShopCategory"
 import LoginSignup from "./Pages/LoginSignup"
 import { Footer } from "./Components/Footer/Footer"
-import men_banner from "/public/banner_mens.png"
-import women_banner from "/public/banner_women.png"
-import kids_banner from "/public/banner_kids.png"
+import men_banner from "/banner_mens.png"
+import women_banner from "/banner_women.png"
+import kids_banner from "/banner_kids.png"
 
 
 const App = () => {

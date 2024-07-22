@@ -25,6 +25,9 @@
   margin-left: 10px;
   color: #333;
 }
+.li{
+    text-decoration: none;
+}
 
 .nav-menu {
     display: flex;
