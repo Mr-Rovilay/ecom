@@ -1,7 +1,12 @@
+import Navbar from "./components/navbar/Navbar"
+import Admin from "./pages/Admin/Admin"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Navbar/>
+      <Admin/>
+    </div>
   )
 }
 
