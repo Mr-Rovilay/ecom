@@ -45,6 +45,9 @@ app.use("/", productRoutes);
 
 // Define the file upload route
 app.post("/upload", upload.single("product"), (req, res) => {
+   if (!req.file) {
+    return res.status(400).json({ message: "No file uploaded" });
+  }
   res.json({
     message: "File uploaded successfully!",
     image_url: `http://localhost:${PORT}/images/${req.file.filename}`,
